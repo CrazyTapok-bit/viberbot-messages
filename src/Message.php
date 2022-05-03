@@ -2,6 +2,7 @@
 
 namespace Viberbot\Messages;
 
+use Viberbot\Messages\Message\Model\KeyboardModel;
 use Viberbot\Messages\Message\Model\SenderModel;
 use Viberbot\Messages\Trait\Expose;
 
@@ -21,6 +22,8 @@ class Message
     protected SenderModel $sender;
 
     protected array $broadcast_list;
+
+    protected KeyboardModel $keyboard;
 
     public function setAuthToken(string $token)
     {
@@ -80,6 +83,12 @@ class Message
     public function setBroadcastList(array $ids)
     {
         $this->broadcast_list = $ids;
+        return $this;
+    }
+
+    public function setKeyboard(KeyboardModel $keyboard): self
+    {
+        $this->keyboard = $keyboard;
         return $this;
     }
 }

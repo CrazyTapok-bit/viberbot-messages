@@ -27,7 +27,7 @@ class KeyboardModel
 
     protected string $InputFieldState;
 
-    protected $FavoritesMetadata;
+    protected Metadata $FavoritesMetadata;
 
     /**
      * @param Button[] $button
