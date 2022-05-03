@@ -20,6 +20,8 @@ class Message
 
     protected SenderModel $sender;
 
+    protected array $broadcast_list;
+
     public function setAuthToken(string $token)
     {
         $this->auth_token = $token;
@@ -73,5 +75,11 @@ class Message
     public function getSender(): ?SenderModel
     {
         return $this->sender;
+    }
+
+    public function setBroadcastList(array $ids)
+    {
+        $this->broadcast_list = $ids;
+        return $this;
     }
 }
