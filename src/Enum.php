@@ -16,7 +16,7 @@ class Enum
         $allowed = array_values($constants);
 
         if (!in_array($value, $allowed, true)) {
-            throw new Exception('Unsupported enum value');
+            throw new Exception("The enum value " . $value . " is not supported. Valid values: " . implode(", ", $allowed));
         }
 
         $this->value = $value;
