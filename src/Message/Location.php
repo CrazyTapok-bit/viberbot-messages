@@ -7,7 +7,7 @@ use Viberbot\Messages\Message\Model\LocationModel;
 
 class Location extends Message
 {
-    
+
     protected string $type = Type::LOCATION;
 
     protected LocationModel $location;

@@ -4,7 +4,7 @@ namespace Viberbot\Messages\Message;
 
 class Type
 {
-    
+
     const TEXT = 'text';
     const PICTURE = 'picture';
     const VIDEO = 'video';

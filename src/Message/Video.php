@@ -6,7 +6,7 @@ use Viberbot\Messages\Message;
 
 class Video extends Message
 {
-    
+
     protected string $type = Type::VIDEO;
 
     protected string $media;

@@ -6,7 +6,7 @@ use Viberbot\Messages\Message;
 
 class File extends Message
 {
-    
+
     protected string $type = Type::FILE;
 
     protected string $media;

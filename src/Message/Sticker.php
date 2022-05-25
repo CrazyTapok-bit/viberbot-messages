@@ -6,7 +6,7 @@ use Viberbot\Messages\Message;
 
 class Sticker extends Message
 {
-    
+
     protected string $type = Type::STICKER;
 
     protected int $sticker_id;
