@@ -1,6 +1,6 @@
 <?php
 
-namespace Viber\Api\Event;
+namespace Viberbot\Messages\Event;
 
 class Unsubscribed extends Event
 {
