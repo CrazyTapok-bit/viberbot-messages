@@ -10,7 +10,7 @@ class Factory
     {
         foreach ($props as $prop => $value) {
 
-            if($prop === 'type'){
+            if(isset($value->type)){
                 switch($value->type){
                     case Type::TEXT:
                         return new Text($value);

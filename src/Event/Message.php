@@ -2,7 +2,7 @@
 
 namespace Viberbot\Messages\Event;
 
-use Viberbot\Messages\Message\Model\SenderModel;
+use Viberbot\Messages\Sender;
 
 class Message extends Event
 {
@@ -10,7 +10,7 @@ class Message extends Event
 
     protected $message;
 
-    public function getSender(): SenderModel
+    public function getSender(): Sender
     {
       return $this->sender;
     }

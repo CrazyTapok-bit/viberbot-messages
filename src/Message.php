@@ -19,7 +19,7 @@ class Message
 
     protected int $min_api_version = 1;
 
-    protected SenderModel $sender;
+    protected Sender $sender;
 
     protected array $broadcast_list;
 
@@ -75,7 +75,7 @@ class Message
         return $this;
     }
 
-    public function getSender(): ?SenderModel
+    public function getSender(): ?Sender
     {
         return $this->sender;
     }
