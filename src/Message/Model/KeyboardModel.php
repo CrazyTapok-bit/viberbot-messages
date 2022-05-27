@@ -11,6 +11,8 @@ class KeyboardModel
 
     use Expose;
 
+    protected string $Type = 'keyboard';
+
     protected array $Buttons;
 
     protected string $BgColor;
