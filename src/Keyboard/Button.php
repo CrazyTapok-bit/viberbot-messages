@@ -135,9 +135,9 @@ class Button
         return $this;
     }
 
-    public function setActionBody(ActionBody $action): self
+    public function setActionBody(ActionBody|string $action): self
     {
-        $this->ActionBody = $action->getValue();
+        $this->ActionBody = gettype($action) === 'string' ? $action : $action->getValue();
         return $this;
     }
 
